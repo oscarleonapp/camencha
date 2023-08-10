@@ -1,8 +1,7 @@
 function doGet() {
-    const html = HtmlService.createTemplateFromFile('LoginPage');
-    const output = html.evaluate()
-    output.setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL)
-    return output;
+
+    return HtmlService.createTemplateFromFile('LoginPage').evaluate()
+        .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 }
 
 function checkCredentials(username, password) {
