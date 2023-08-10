@@ -2,6 +2,7 @@ function doGet() {
     const html = HtmlService.createTemplateFromFile('LoginPage');
     const output = html.evaluate()
     output.setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL)
+    return output;
 }
 
 function checkCredentials(username, password) {
@@ -17,3 +18,4 @@ function checkCredentials(username, password) {
 
     return false; // Credenciales inválidas
 }
+
