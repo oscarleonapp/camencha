@@ -1,62 +1,61 @@
 <!DOCTYPE html>
-<>
 
-    <head>
-        <base target="_top">
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: 'Poppins', sans-serif;
-            }
+<head>
+    <base target="_top">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
 
-            body {
-                background: #fff;
-                overflow: hidden;
-            }
+        body {
+            background: #fff;
+            overflow: hidden;
+        }
 
-            iframe {
-                width: 100%;
-                height: 100vh;
-                border: none;
-            }
-        </style>
-    </head>
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
 
-    <body>
-        <iframe
-            src="https://script.google.com/macros/s/AKfycbzmhcB9sD_Hy10U_JAU9XzvL6yVGvk41v0bDHq2kFvB1QFZbMrACnerzh1vKx0zJh4eVg/exec">
-        </iframe>
-    </body>
+<body>
+    <iframe
+        src="https://script.google.com/macros/s/AKfycbzmhcB9sD_Hy10U_JAU9XzvL6yVGvk41v0bDHq2kFvB1QFZbMrACnerzh1vKx0zJh4eVg/exec">
+    </iframe>
+</body>
 
-    <table class="table table-hover">
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Sexo</th>
-                <th>Correo</th>
-                <th>Fecha de nacimiento</th>
-                <th>Telefono</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody id="tableBody-usuarios">
-            <!-- Insertado desde JS -->
-        </tbody>
-    </table>
-
-    <template id="rowTemplate">
+<table class="table table-hover">
+    <thead>
         <tr>
-            <td class="template-nombre"></td>
-            <td class="template-apellido"></td>
-            <td class="template-sexo"></td>
-            <td class="template-correo"></td>
-            <td class="template-fechaNacimiento"></td>
-            <td class="template-telefono"></td>
-            <td class="template-acciones"><i class="bi bi-pencil-square"></i><i class="bi bi-trash"></i></td>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Sexo</th>
+            <th>Correo</th>
+            <th>Fecha de nacimiento</th>
+            <th>Telefono</th>
+            <th>Acciones</th>
         </tr>
-    </template>
+    </thead>
+    <tbody id="tableBody-usuarios">
+        <!-- Insertado desde JS -->
+    </tbody>
+</table>
 
-    </html>
+<template id="rowTemplate">
+    <tr>
+        <td class="template-nombre"></td>
+        <td class="template-apellido"></td>
+        <td class="template-sexo"></td>
+        <td class="template-correo"></td>
+        <td class="template-fechaNacimiento"></td>
+        <td class="template-telefono"></td>
+        <td class="template-acciones"><i class="bi bi-pencil-square"></i><i class="bi bi-trash"></i></td>
+    </tr>
+</template>
+
+</html>
