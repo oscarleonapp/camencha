@@ -7,26 +7,38 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            /* font-family: 'Poppins', sans-serif; */
         }
 
         body {
             background: #fff;
-            overflow: hidden;
+
+            /* overflow: hidden; */
         }
 
-        iframe {
+        .iframe {
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: center;
+            height: 520px;
             width: 100%;
-            height: 100vh;
-            border: none;
+
+            /* height: 100vh;
+            border: none; */
         }
     </style>
 </head>
 
 <body>
-    <iframe
+    <!-- <iframe
         src="https://script.google.com/macros/s/AKfycbwY_Bq4rL4gR04TDFMzUkD_9nl9b28DY4tefXmEW0nGa77qThjLHXIX7EzTejZZESWTsA/exec">
-    </iframe>
+    </iframe> -->
+    <div class="iframe">
+        <iframe
+            src="https://script.google.com/macros/s/AKfycbwY_Bq4rL4gR04TDFMzUkD_9nl9b28DY4tefXmEW0nGa77qThjLHXIX7EzTejZZESWTsA/exec"
+            width="380" height="520" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    </div>
+
 </body>
 
 </html>
